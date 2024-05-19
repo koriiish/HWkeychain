@@ -14,6 +14,7 @@
 		A7A0A2C02BFA385100BD48DE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A0A2BF2BFA385100BD48DE /* LoginView.swift */; };
 		A7A0A2C22BFA3FC600BD48DE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A0A2C12BFA3FC600BD48DE /* User.swift */; };
 		A7A0A2C42BFA400B00BD48DE /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A0A2C32BFA400B00BD48DE /* LoginViewModel.swift */; };
+		A7A0A2E22BFA4A2700BD48DE /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A0A2E12BFA4A2700BD48DE /* KeychainManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		A7A0A2BF2BFA385100BD48DE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A7A0A2C12BFA3FC600BD48DE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A7A0A2C32BFA400B00BD48DE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A7A0A2E12BFA4A2700BD48DE /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		A7A0A2A52BFA381500BD48DE = {
 			isa = PBXGroup;
 			children = (
+				A7A0A2E12BFA4A2700BD48DE /* KeychainManager.swift */,
 				A7A0A2C32BFA400B00BD48DE /* LoginViewModel.swift */,
 				A7A0A2C12BFA3FC600BD48DE /* User.swift */,
 				A7A0A2BF2BFA385100BD48DE /* LoginView.swift */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7A0A2C22BFA3FC600BD48DE /* User.swift in Sources */,
+				A7A0A2E22BFA4A2700BD48DE /* KeychainManager.swift in Sources */,
 				A7A0A2C02BFA385100BD48DE /* LoginView.swift in Sources */,
 				A7A0A2B42BFA381500BD48DE /* ContentView.swift in Sources */,
 				A7A0A2C42BFA400B00BD48DE /* LoginViewModel.swift in Sources */,

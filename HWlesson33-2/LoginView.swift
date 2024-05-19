@@ -10,6 +10,8 @@ import SwiftUI
 struct LoginView: View {
     @Bindable var viewModel: LoginViewModel
     
+    @State private var status = ""
+    
 //    @State private var username = ""
 //    @State private var password = ""
 //    
@@ -40,6 +42,25 @@ struct LoginView: View {
             ButtonView(isDisabled: viewModel.isLogginButtonDisabled, action: {
                 viewModel.logIn()
             })
+            Button("Sign up") {
+                do {
+                    status = try KeychainManager.save(
+                        name: viewModel.user.name,
+                        password: viewModel.user.password.data(using: .utf8) ?? Data())
+                } catch {
+                    print(error)
+                }
+            }
+            Button("Click here if you forgot your password") {
+                do {
+                    let data = try KeychainManager.getPassword(for: viewModel.user.name)
+                    status = String(decoding: data ?? Data(), as: UTF8.self)
+                } catch {
+                    print(error)
+                }
+            }
+            Text(status)
+                .foregroundColor(.red)
         }
         Spacer()
     }
