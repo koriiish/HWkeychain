@@ -19,15 +19,6 @@
 //    
 //    private init() {}
 //    
-//    func checkCondition(successCompletion: @escaping (() -> Void)) {
-//            notificationCenter.requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
-//                if success {
-//                    successCompletion()
-//                } else if let error {
-//                    print(error.localizedDescription)
-//                }
-//            }
-//        }
 //
 //        func addNotification() {
 //            let content = UNMutableNotificationContent()
