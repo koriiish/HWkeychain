@@ -15,6 +15,10 @@
 		A7A0A2C22BFA3FC600BD48DE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A0A2C12BFA3FC600BD48DE /* User.swift */; };
 		A7A0A2C42BFA400B00BD48DE /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A0A2C32BFA400B00BD48DE /* LoginViewModel.swift */; };
 		A7A0A2E22BFA4A2700BD48DE /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A0A2E12BFA4A2700BD48DE /* KeychainManager.swift */; };
+		A7A0A2E52BFA86CB00BD48DE /* SwiftyKeychainKit in Frameworks */ = {isa = PBXBuildFile; productRef = A7A0A2E42BFA86CB00BD48DE /* SwiftyKeychainKit */; };
+		A7A0A2E72BFA8A9000BD48DE /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A0A2E62BFA8A9000BD48DE /* AuthService.swift */; };
+		A7A0A2E92BFA8C3E00BD48DE /* KeychainKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A0A2E82BFA8C3E00BD48DE /* KeychainKeys.swift */; };
+		A7A0A2EB2BFA915200BD48DE /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A0A2EA2BFA915200BD48DE /* NotificationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,9 @@
 		A7A0A2C12BFA3FC600BD48DE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A7A0A2C32BFA400B00BD48DE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		A7A0A2E12BFA4A2700BD48DE /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		A7A0A2E62BFA8A9000BD48DE /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A7A0A2E82BFA8C3E00BD48DE /* KeychainKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainKeys.swift; sourceTree = "<group>"; };
+		A7A0A2EA2BFA915200BD48DE /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A0A2E52BFA86CB00BD48DE /* SwiftyKeychainKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +51,9 @@
 		A7A0A2A52BFA381500BD48DE = {
 			isa = PBXGroup;
 			children = (
+				A7A0A2EA2BFA915200BD48DE /* NotificationService.swift */,
+				A7A0A2E82BFA8C3E00BD48DE /* KeychainKeys.swift */,
+				A7A0A2E62BFA8A9000BD48DE /* AuthService.swift */,
 				A7A0A2E12BFA4A2700BD48DE /* KeychainManager.swift */,
 				A7A0A2C32BFA400B00BD48DE /* LoginViewModel.swift */,
 				A7A0A2C12BFA3FC600BD48DE /* User.swift */,
@@ -95,6 +106,9 @@
 			dependencies = (
 			);
 			name = "HWlesson33-2";
+			packageProductDependencies = (
+				A7A0A2E42BFA86CB00BD48DE /* SwiftyKeychainKit */,
+			);
 			productName = "HWlesson33-2";
 			productReference = A7A0A2AE2BFA381500BD48DE /* HWlesson33-2.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +137,9 @@
 				Base,
 			);
 			mainGroup = A7A0A2A52BFA381500BD48DE;
+			packageReferences = (
+				A7A0A2E32BFA86CB00BD48DE /* XCRemoteSwiftPackageReference "SwiftyKeychainKit" */,
+			);
 			productRefGroup = A7A0A2AF2BFA381500BD48DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -150,9 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7A0A2C22BFA3FC600BD48DE /* User.swift in Sources */,
+				A7A0A2E72BFA8A9000BD48DE /* AuthService.swift in Sources */,
 				A7A0A2E22BFA4A2700BD48DE /* KeychainManager.swift in Sources */,
 				A7A0A2C02BFA385100BD48DE /* LoginView.swift in Sources */,
+				A7A0A2EB2BFA915200BD48DE /* NotificationService.swift in Sources */,
 				A7A0A2B42BFA381500BD48DE /* ContentView.swift in Sources */,
+				A7A0A2E92BFA8C3E00BD48DE /* KeychainKeys.swift in Sources */,
 				A7A0A2C42BFA400B00BD48DE /* LoginViewModel.swift in Sources */,
 				A7A0A2B22BFA381500BD48DE /* HWlesson33_2App.swift in Sources */,
 			);
@@ -358,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A7A0A2E32BFA86CB00BD48DE /* XCRemoteSwiftPackageReference "SwiftyKeychainKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/andriyslyusar/SwiftyKeychainKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A7A0A2E42BFA86CB00BD48DE /* SwiftyKeychainKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7A0A2E32BFA86CB00BD48DE /* XCRemoteSwiftPackageReference "SwiftyKeychainKit" */;
+			productName = SwiftyKeychainKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A7A0A2A62BFA381500BD48DE /* Project object */;
 }

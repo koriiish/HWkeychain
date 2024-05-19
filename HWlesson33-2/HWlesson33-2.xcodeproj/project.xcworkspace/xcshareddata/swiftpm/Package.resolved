@@ -1,0 +1,15 @@
+{
+  "originHash" : "87646254f9f9ff7d8eacc0203711149364e50f67c20821f60eac62689ddd0f5e",
+  "pins" : [
+    {
+      "identity" : "swiftykeychainkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/andriyslyusar/SwiftyKeychainKit.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "f864b84bf570e9b13bacbdbec5133c40ddd75364"
+      }
+    }
+  ],
+  "version" : 3
+}
